@@ -1,0 +1,60 @@
+/* Background */
+.login-container {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.login-box {
+  background: #1c1f2e;
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Title */
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.login-box button:hover {
+  background: darkred;
+}
+
+/* Link */
+.login-box p {
+  margin-top: 15px;
+  color: #00bfff;
+  cursor: pointer;
+}

@@ -1,0 +1,108 @@
+.container-dark {
+  background: #0d0f1a;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  margin:10px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background:red;
+  padding:10px;
+  margin:10px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background: #1c1f2e;
+  border-radius: 10px;
+}
+
+.card button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+}
+
+.row button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.active {
+  background: red;
+}
+
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selected {
+  background: red;
+}
+/* Center whole screen */
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.summary-card {
+  background: #1c1f2e;
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+/* Center title */
+.center-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Row layout */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* RED BUTTON */
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
