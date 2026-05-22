@@ -13,15 +13,26 @@ function Home({ user, setUser }) {
   const [selectedSeats, setSelectedSeats] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.66:5000/movies")
-      .then(res => res.json())
-      .then(data => setMovies(data));
 
-    fetch("http://192.168.1.66:5000/branches")
-      .then(res => res.json())
-      .then(data => setBranches(data));
-  }, []);
+  fetch("http://localhost:5000/movies")
+    .then((res) => res.json())
+    .then((data) => {
+      setMovies(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 
+  fetch("http://localhost:5000/branches")
+    .then((res) => res.json())
+    .then((data) => {
+      setBranches(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+}, []);
   function logout() {
     setUser(null);
   }
@@ -35,7 +46,7 @@ function Home({ user, setUser }) {
   }
 
   function confirmBooking() {
-    fetch("http://192.168.1.66:5000/reserve", {
+    fetch("http://localhost:5000/reserve", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

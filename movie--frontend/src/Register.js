@@ -12,7 +12,7 @@ function Register({ setShowLogin }) {
       return;
     }
 
-    fetch("http://192.168.1.66:5000/register", {
+    fetch("http://localhost:5000/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
